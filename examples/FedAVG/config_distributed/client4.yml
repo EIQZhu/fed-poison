@@ -1,0 +1,44 @@
+role: "client"
+
+idx: 4
+
+ip: "127.0.0.1"
+
+port: 8004
+
+server_ip: "127.0.0.1"
+
+server_port: 9000
+
+# model
+model: "SimpleCNN"
+
+# dataset
+data: "MNIST"
+
+# mini-batch size
+batch_size: 64
+
+optimizer: "SGD"
+
+lr: 0.1
+
+# the path of dataset
+path: "./datasets"
+
+# the parameter to control NON-Iidx
+alpha: 100
+
+# local training round
+local_epoch: 3
+
+# global training round
+global_epoch: 5
+
+algorithm: "FedAVG"
+
+# device
+device: "cpu"
+
+#neibor
+neighborhood_size: 3

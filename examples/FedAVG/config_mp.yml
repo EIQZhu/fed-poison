@@ -1,0 +1,91 @@
+server:
+  ip: "localhost"
+  port: 9000
+
+# The number of clients
+n_clients: 10
+
+client1:
+  ip: "localhost"
+  port: 8001
+  idx: 1
+
+client2:
+  ip: "localhost"
+  port: 8002
+  idx: 2
+
+client3:
+  ip: "localhost"
+  port: 8003
+  idx: 3
+
+client4:
+  ip: "localhost"
+  port: 8004
+  idx: 4
+
+client5:
+  ip: "localhost"
+  port: 8005
+  idx: 5
+
+client6:
+  ip: "localhost"
+  port: 8006
+  idx: 6
+
+client7:
+  ip: "localhost"
+  port: 8007
+  idx: 7
+
+client8:
+  ip: "localhost"
+  port: 8008
+  idx: 8
+
+client9:
+  ip: "localhost"
+  port: 8009
+  idx: 9
+
+client10:
+  ip: "localhost"
+  port: 8010
+  idx: 10
+
+
+# optimizer
+optimizer:
+  type: "SGD"
+  lr: 0.1
+
+# model
+model: "SimpleCNN"
+
+# dataset
+data: "MNIST"
+
+# mini-batch size
+batch_size: 64
+
+# the path of dataset
+path: "./datasets"
+
+# the parameter to control NON-Iidx
+alpha: 0.05
+
+# local training round
+local_epoch: 3
+
+# global training round
+global_epoch: 10
+
+algorithm: "FedAVG"
+
+# device
+device: "cpu"
+
+#neibor
+neighborhood_size: 3
